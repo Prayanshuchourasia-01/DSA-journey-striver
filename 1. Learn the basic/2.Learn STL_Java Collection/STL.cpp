@@ -68,11 +68,73 @@ void explainVector(){
     v.erase(v.begin()+1);
     v.erase(v.begin()+2,v.begin()+4);
 
- 
+    // Insert Function 
+    vector <int> v(2,100);
+    v.insert(v.begin(),300); // {300,100,100}
+    v.insert(v.begin()+1,2,10); // {300,10,10,100,100}
 
+    vector<int> copy(2,50);
+    v.insert(v.begin(),copy.begin(),copy.end());
 
+    cout<<v.size();
+
+    v.pop_back();
+
+    v1.swap(v2);
+
+    v.clear();  // erase the entire vector 
+
+    cout<< v.empty();
 
 }
+
+
+void explainList(){
+    list<int> ls;
+    ls.push_back(5);
+    ls.emplace_back(4);
+    ls.push_front(2);
+    ls.emplace_front(8);
+
+    // begin ,end , rbegin , rend ,clear, insert , size , swap ... same as vecotr 
+
+}
+
+
+void explainDeque(){
+    deque<int> dq;
+    dq.push_back(5);
+    dq.emplace_back(4);
+    dq.push_front(2);
+    dq.emplace_front(8);
+
+    // begin ,end , rbegin , rend ,clear, insert , size , swap ... same as vecotr 
+
+}
+
+
+void explainStack(){
+    stack<int> st;
+    st.push(1); // {1}
+    st.push(2); // {2,1}
+    st.push(3); // {3,2,1}
+    st.push(4); // {4,3,2,1}
+    st.emplace(6); // {6,4,3,2,1}
+
+    cout<<st.top();  // gives 6
+
+    st.pop();
+    cout<<st.top();  // gives 4
+    cout<<st.size();
+    cout<<st.empty();
+
+    stack<int> st1,st2;
+    st1.swap(st2);
+
+
+    
+}
+
 
 int main(){
 
