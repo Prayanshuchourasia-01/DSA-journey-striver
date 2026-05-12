@@ -130,10 +130,41 @@ void explainStack(){
 
     stack<int> st1,st2;
     st1.swap(st2);
-
-
-    
 }
+
+
+void explainQueue(){
+    queue<int> q;
+    q.push(1); // {1}
+    queue.push(2); // {1,2}
+    q.push(3); // {1,2,3}
+    q.push(4); // {1,2,3,4}
+    q.emplace(6); // {1,2,3,4,6}
+
+    q.back()+=5;  // gives 11
+    q.pop(); // remove 1 
+    cout<<q.front();  // gives 4
+ // size , swap , empty ,same as stack 
+
+}
+
+
+void explainQueue(){
+    queue<int> q;
+    q.push(1); // {1}
+    queue.push(2); // {1,2}
+    q.push(3); // {1,2,3}
+    q.push(4); // {1,2,3,4}
+    q.emplace(6); // {1,2,3,4,6}
+
+    q.back()+=5;  // gives 11
+    q.pop(); // remove 1 
+    cout<<q.front();  // gives 4
+ // size , swap , empty ,same as stack 
+
+}
+
+
 
 
 int main(){
