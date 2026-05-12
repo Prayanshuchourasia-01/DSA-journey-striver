@@ -164,6 +164,32 @@ void explainQueue(){
 
 }
 
+void explainPQ(){
+
+    // max heap 
+    priority_queue<int> pq;
+    pq.push(3); // {3}
+     pq.push(1); // {3,1}
+     pq.push(5); // {5,3,1}
+     pq.emplace(13); // {13,5,3,1}
+    cout<<pq.top(); // prints  13
+
+    pq.pop(); // remove 13
+
+    //   other funciton are same
+
+
+    // min-heap
+    priority_queue<int,vector<int>,greater<int>> pq;
+    pq.push(3); // {3}
+    pq.push(1); // {1,3}
+    pq.push(5); // {1,3,5}
+    pq.emplace(13); // {1,3,5,13}
+    cout<<pq.top(); // prints  1
+    
+
+
+}
 
 
 
