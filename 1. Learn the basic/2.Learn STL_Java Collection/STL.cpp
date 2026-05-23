@@ -247,8 +247,65 @@ void explainUSet(){  // it stores unique elements but not in sorted roder , in r
     // in this lower_bound and upper_bound function do not work , , rest all the function works 
     // all the operations goes O(1)  ,
     // if any worst situation comes then it will be O(n)
-    
+
 }
+
+
+void explainMap(){
+    map<int,int> map ;
+    map<int,pair<int,int>> mpp ;
+    map<pair<int,int>,int> mpa ;
+    
+    map[1] = 2 ;
+    map.emplace({3,1});
+    map.insert({2,4});
+
+    mpa[{2,3}] = 10 ; // key is {2,3} and value is 10 
+
+
+    for(auto it : map){
+        cout<< it.first << " " << it.second << endl;
+    }
+
+
+    cout<<map[1];
+    cout<< map[2];
+
+    auto it = map.find(3);
+    cout<< *(it).second;
+
+
+    auto it = map.find(5);
+
+    auto it = map.upper_bound(3);
+    auto it = map.lower_bound(2);
+
+    // erase , swap , size , empty is same 
+
+}
+
+
+
+void explainMultiMap(){
+    // everythigns same as map , only it can store multiple keys 
+    // only map[key]  cannot be used here 
+    // you can duplicate keys and also in sorted order
+
+    // always work in logn
+}
+
+void explainUnorderedMap(){
+    // same as set and unordered_set differnce 
+    // it have unique keys but it will not be sorted , it will be randomaized 
+
+    // always work in O(1)
+}
+
+
+
+
+
+
 
 
 
