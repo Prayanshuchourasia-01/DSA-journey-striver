@@ -187,6 +187,39 @@ void explainPQ(){
     pq.emplace(13); // {1,3,5,13}
     cout<<pq.top(); // prints  1
     
+}
+
+void explainSet(){ // Puts Sorted and unique Elements also
+    set<int> s ;
+    st.insert(1); // {1}
+    st.insert(1); // {1}
+    st.insert(2); // {1,2}
+    st.insert(6); // {1,2,6}
+    st.insert(4); // {1,2,6,4}
+    st.emplace(1);
+
+// Functionality of insert in vector can be used also , that only increase efficency
+
+// begin(),end(),rbegin(), , rend() , size() 
+// empty() , and swap() are same as those of above 
+// {1,2,6,4}
+auto it = s.find(3);
+// {1,2,6,4}
+auto it = s.find(9);
+// {1,2,6}
+s.erase(4);
+
+int cnt = s.count(1);
+
+auto it = s.find(3);
+s.erase(it);
+
+auto it1 = s.find(2);
+auto it2 = s.find(4);
+s.erase(it1 , it2); // this will remove the element from it1 to it2 
+
+auto it = s.upper_bound(2);
+auto it = s.lower_bound(3);
 
 
 }
