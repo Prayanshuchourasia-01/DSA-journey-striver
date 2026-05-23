@@ -221,8 +221,28 @@ s.erase(it1 , it2); // this will remove the element from it1 to it2
 auto it = s.upper_bound(2);
 auto it = s.lower_bound(3);
 
+}
+
+
+void explainMultiSet(){
+    // Every Things is same as set
+    // only stores duplicate element also
+    multiset<int> ms ;
+    ms.insert(1); // {1}
+    ms.insert(1); // {1,1}
+    ms.insert(1); // {1,1,1}
+
+    ms.erase(1); // {} it will erase all the occurance of 1
+    
+    int cnt = ms.count(1);
+    ms.erase(ms.find(1));  // find() will return a iterator and erase function will erase the iterator only not the whole 1 occurance 
+
+    ms.erase(ms.find(1),ms.find(1)+2);
+    // rest all function are same 
 
 }
+
+
 
 
 
