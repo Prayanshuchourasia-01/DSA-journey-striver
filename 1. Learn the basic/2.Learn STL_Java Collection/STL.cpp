@@ -242,7 +242,13 @@ void explainMultiSet(){
 
 }
 
-
+void explainUSet(){  // it stores unique elements but not in sorted roder , in randomized manner 
+    unordered_set<int > uos ;
+    // in this lower_bound and upper_bound function do not work , , rest all the function works 
+    // all the operations goes O(1)  ,
+    // if any worst situation comes then it will be O(n)
+    
+}
 
 
 
