@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-
+// using map : storing and fetch takes around (logn) TC
 // by using map we can also compute the value more then 10 ke power 9;
 
 int main(){
