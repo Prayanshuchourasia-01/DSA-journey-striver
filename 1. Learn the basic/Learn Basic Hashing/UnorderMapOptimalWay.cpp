@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
-// using map : storing and fetch takes around (logn) TC
+// using unordered_map : storing and fetch takes around O(1) TC , and in worst case only it goes to O(n) TC
+
 // by using map we can also compute the value more then 10 ke power 9;
 
 int main(){
