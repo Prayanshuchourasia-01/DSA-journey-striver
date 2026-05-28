@@ -1,8 +1,6 @@
 #include<iostream>
 using namespace std;
 
-// We can only make a hash of 10 ke power 6 inside of main function , if we do it globally we can to till 10 ke power 7
-// not beyond that. 
 
 int main(){
 
