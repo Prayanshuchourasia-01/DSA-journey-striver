@@ -10,8 +10,8 @@ This repository is dedicated to my progress through the **Striver's A2Z DSA Shee
 ## 📊 Progress Tracker
 | Topic | Status | Completed |
 | :--- | :---: | :---: |
-| Learn the Basics | 🟡 In Progress | 2/15 |
-| Sorting Techniques | ⚪ Not Started | 0/7 |
+| Learn the Basics | 🟡 Completed | 15/15 |
+| Sorting Techniques | 🟡 In Progres | 0/7 |
 | Arrays (Easy -> Hard) | ⚪ Not Started | 0/40 |
 | Binary Search | ⚪ Not Started | 0/32 |
 
